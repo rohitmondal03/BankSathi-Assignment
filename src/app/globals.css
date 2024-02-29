@@ -2,32 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url(https://db.onlinewebfonts.com/c/b9fc3f782250bd4d69702f459b8d997b?family=Faktum+Test+Bold);
+
+@font-face {
+  font-family: "Faktum Test Bold";
+  src: url("https://db.onlinewebfonts.com/t/b9fc3f782250bd4d69702f459b8d997b.eot");
+  src: url("https://db.onlinewebfonts.com/t/b9fc3f782250bd4d69702f459b8d997b.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/b9fc3f782250bd4d69702f459b8d997b.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/b9fc3f782250bd4d69702f459b8d997b.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/b9fc3f782250bd4d69702f459b8d997b.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/b9fc3f782250bd4d69702f459b8d997b.svg#Faktum Test Bold")
+      format("svg");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  font-family: "Faktum Test Bold";
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-zinc-100;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+.intro-bg {
+  background-image: url("../../public/assets/big-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
