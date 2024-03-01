@@ -66,12 +66,11 @@ export default function AdvantagesSection() {
       </div>
 
 
-      <div className="flex items-center justify-center gap-24 flex-wrap flex-1">
-        {/* bg-gradient-to-r from-purple-50 from-0% via-purple-100 via-50% to-purple-50 to-100%  */}
-        {features.map(feat => (
+      <div className="flex items-center justify-center gap-24 flex-wrap flex-1 py-10">
+        {features.map((feat, idx) => (
           <div
             key={feat.label}
-            className="shadow-[0_0_50px] shadow-zinc-300 p-4 rounded-2xl w-[25vw] h-[45vh] flex  flex-col items-center justify-center gap-y-6"
+            className={`bg-white p-4 rounded-2xl w-[25vw] h-[45vh] flex flex-col items-center justify-center gap-y-6 ${idx < 3 ? "shadow-[0_0_150px] shadow-purple-300" : null}`}
           >
             <Image
               src={feat.img}

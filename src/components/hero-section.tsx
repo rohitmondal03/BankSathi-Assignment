@@ -44,6 +44,7 @@ export default function HeroSection() {
             alt="img"
             height={50}
             width={50}
+            loading="lazy"
             className="absolute -right-5 -top-5 rounded-full px-2 py-3 border-white border-2 bg-primary"
           />
         </div>
@@ -62,6 +63,7 @@ export default function HeroSection() {
             alt="img"
             height={100}
             width={100}
+            loading="lazy"
           />
         ))}
       </div>
