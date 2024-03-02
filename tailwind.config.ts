@@ -15,7 +15,10 @@ const config: Config = {
       },
       colors: {
         primary: "#844FCF",
-      }
+      },
+      screens: {
+          xs: "320px",
+      },
     },
   },
   plugins: [],

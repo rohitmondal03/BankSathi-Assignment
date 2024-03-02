@@ -28,7 +28,7 @@ export default function StatsSection() {
       </p>
 
 
-      <div className="flex items-center justify-center gap-20">
+      <div className="flex flex-grow flex-wrap flex-1 items-center justify-center gap-12 md:gap-20">
         {stats.map(stat => (
           <div
             key={stat.label}

@@ -26,11 +26,11 @@ export default function ContactSection() {
           height={700}
           width={700}
           loading="lazy"
-          className="w-full h-[45rem]"
+          className="w-full h-[30rem] lg:h-[45rem]"
         />
 
         {/* 'OUR VISION' BOX */}
-        <div className="text-white space-y-10 absolute top-36 right-24 p-5 w-[35vw] bg-zinc-300 bg-opacity-40">
+        <div className="text-white space-y-4 md:space-y-10 absolute top-44 lg:top-36 right-0 lg:right-24 p-2 md:p-5 w-[95vw] xs:w-[85vw] md:w-[60vw] lg:w-[35vw] bg-zinc-300 bg-opacity-40">
           <h1 className="text-2xl">
             Our Vision
           </h1>
@@ -42,7 +42,7 @@ export default function ContactSection() {
 
 
         {/* CONTACT FORM */}
-        <div className="absolute top-[60%] right-24 bg-white p-10 rounded-2xl space-y-10 w-[40vw]">
+        <div className="lg:absolute lg:top-[60%] lg:right-24 bg-white p-4 md:p-10 rounded-2xl space-y-10 w-[90vw] sm:w-3/4 lg:w-[40vw] mx-auto my-10">
           <div>
             <p className="capitalize text-zinc-400">
               send a message
@@ -76,8 +76,8 @@ export default function ContactSection() {
 
 
       {/* LOWER SECTION */}
-      <section className="pt-16 pb-24 px-20 space-y-20">
-        <div className="space-y-3">
+      <section className="pt-0 md:pt-16 pb-24 px-5 md:px-12 lg:px-20 space-y-20">
+        <div className="hidden lg:block space-y-3">
           <div className="flex items-end">
             <div className="space-y-3">
               <h1 className="text-3xl">
@@ -117,10 +117,10 @@ export default function ContactSection() {
         </div>
 
 
-        <div className="flex items-center justify-between">
-          <div className="space-y-6 w-96">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10">
+          <div className="space-y-6 w-[90%] sm:w-80 md:w-96">
             {/* PARTNERS SECTION */}
-            <div className="flex items-center gap-8">
+            <div className="flex items-center justify-center gap-2 md:gap-8">
               <Image
                 src={hiFiveImg}
                 alt="img"
@@ -130,19 +130,19 @@ export default function ContactSection() {
                 className=""
               />
 
-              <p>
+              <p className="w-[80%]">
                 98 % Partner Satisfaction
               </p>
             </div>
 
-            <div className="space-y-4">
-              <h1 className="text-4xl">
+            <div className="space-y-4 text-center md:text-left">
+              <h1 className="text-3xl md:text-4xl">
                 Check {" "}
                 <span className="text-green-400">what our <span>Partners</span> </span>
                 has to say
               </h1>
 
-              <p>
+              <p className="text-sm md:text-base">
                 These partnerships can take many forms, but they typically involve one partner providing the technology or expertise, while the other partner provides the customer base or distribution channels.
               </p>
             </div>
@@ -151,7 +151,7 @@ export default function ContactSection() {
 
           {/* CAROUSEL SECTION */}
           <div className="relative">
-            <div className="bg-white rounded-2xl flex flex-col items-center justify-center gap-10 py-10 px-12 max-w-[40rem] shadow-[0_0_10px] shadow-purple-100">
+            <div className="bg-white rounded-2xl flex flex-col items-center justify-center gap-10 p-6 md:py-10 md:px-12 max-w-[40rem] shadow-[0_0_10px] shadow-purple-100">
               <Image
                 src={starsImg}
                 alt="stars"
@@ -160,7 +160,7 @@ export default function ContactSection() {
                 width={100}
               />
 
-              <p className="text-zinc-700 text-xl">
+              <p className="text-zinc-700 text-base md:text-xl">
                 My experience has been great with BankSathi. It's a great organisation to collborate with.
               </p>
 
@@ -174,11 +174,11 @@ export default function ContactSection() {
                 />
 
                 <div>
-                  <h1 className="text-2xl">
+                  <h1 className="text-sm md:text-lg lg:text-2xl">
                     Sanjeev D Kumar
                   </h1>
 
-                  <p className="text-zinc-400">
+                  <p className="text-zinc-400 text-sm md:text-base">
                     AVP, Angel One
                   </p>
                 </div>

@@ -4,6 +4,7 @@ import ContactSection from "@/components/contact-section";
 import HeroSection from "@/components/hero-section";
 import StatsSection from "@/components/stats-section";
 import HelpSection from "@/components/help-section";
+import Footer from "@/components/footer";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <CollaborationSection />
       <ContactSection />
       <HelpSection />
+      <Footer />
     </>
   );
 }

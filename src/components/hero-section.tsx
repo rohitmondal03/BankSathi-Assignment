@@ -14,14 +14,14 @@ const partners = [kotakImg, sbiImg, hdfcImg, axisImg, induslandImg];
 
 export default function HeroSection() {
   return (
-    <section className="intro-bg space-y-16 text-center py-24 bg-primary text-white">
+    <section className="intro-bg space-y-16 text-center py-16 md:py-24 bg-primary text-white">
       <div className='space-y-6'>
-        <h1 className='font-bold text-4xl'>
+        <h1 className='font-bold text-2xl sm:text-3xl md:text-4xl'>
           Collaborate, Thrive & Succeed <br />
           Explore Our Partnerships
         </h1>
 
-        <p>
+        <p className="text-sm md:text-base">
           Empower Every Household Financially with Our Platform. <br />
           Say Goodbye to Confusion and Secure Better Deals!
         </p>
@@ -55,7 +55,7 @@ export default function HeroSection() {
       </div>
 
 
-      <div className="flex items-center justify-around px-20">
+      <div className="flex items-center justify-around flex-grow flex-wrap flex-1 gap-10 px-20">
         {partners.map(img => (
           <Image
             key={img.src}

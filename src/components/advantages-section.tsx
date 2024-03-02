@@ -53,8 +53,8 @@ const features: TFeatures[] = [
 
 export default function AdvantagesSection() {
   return (
-    <section className="space-y-12 pb-10 text-center">
-      <div className="text-4xl py-10">
+    <section className="space-y-0 lg:space-y-12 pb-10 text-center">
+      <div className="text-2xl md:text-3xl lg:text-4xl py-10">
         <h1>
           Partner with us for:
           <span className="text-green-400">&nbsp;Mutual Growth,</span>
@@ -66,12 +66,18 @@ export default function AdvantagesSection() {
       </div>
 
 
-      <div className="flex items-center justify-center gap-24 flex-wrap flex-1 py-10">
+      <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-12 items-center justify-between place-items-center py-10 px-3 sm:px-10">
+        {/* flex items-center justify-center */}
         {features.map((feat, idx) => (
           <div
             key={feat.label}
-            className={`bg-white p-4 rounded-2xl w-[25vw] h-[45vh] flex flex-col items-center justify-center gap-y-6 ${idx < 3 ? "shadow-[0_0_150px] shadow-purple-300" : null}`}
+            className={`
+            bg-white p-2 md:p-4 rounded-2xl w-full sm:w-[40vw] xl:w-fit h-[20rem] flex flex-col items-center justify-center gap-y-6 
+            ${idx < 3 ? "xl:shadow-[0_0_150px] xl:shadow-purple-300" : null} 
+            ${idx > 0 && idx < features.length - 1 ? "shadow-[0_0_150px] xl:shadow-none shadow-purple-300" : null}
+            `}
           >
+            {/* ADDED CONDITIONAL STYLING FOR ADDING SHADOWS TO ONLY SOME BOXES RATHER THAN ALLL OF THEM !!*/}
             <Image
               src={feat.img}
               alt="img"
